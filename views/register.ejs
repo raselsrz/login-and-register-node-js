@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iofrm</title>
+    <link rel="stylesheet" type="text/css" href="/public/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="/public/css/fontawesome-all.min.css">
+    <link rel="stylesheet" type="text/css" href="/public/css/iofrm-style.css">
+    <link rel="stylesheet" type="text/css" href="/public/css/iofrm-theme39.css">
+</head>
+<body>
+    <div class="form-body without-side">
+        <div class="iofrm-layout">
+            <div class="form-holder">
+                <div class="form-content">
+                    <div class="image-container">
+                        <img src="/public/img/graphic13-1.svg" alt="">
+                    </div>
+                    <div class="form-items">
+                        <img class="img-float" src="/public/img/graphic13-2.svg" alt="">
+                        <div class="website-logo-inside logo-normal">
+                            <a href="index.html">
+                                <div class="logo">
+                                    <img class="logo-size" src="/public/img/logo-light.svg" alt="">
+                                </div>
+                            </a>
+                        </div>
+                        <h3 class="font-md">Register new account</h3>
+                        <p>Access to the most powerfull tool in the entire design and web industry.</p>
+                        <form action="/register" method="POST">
+                            <input class="form-control" type="text" name="name" placeholder="Full Name" required>
+                            <input class="form-control" type="email" name="email" placeholder="E-mail Address" required>
+                            <input class="form-control" type="password" name="password" placeholder="Password" required>
+                            <div class="form-button d-flex">
+                                <button id="submit" type="submit" class="btn btn-primary">Register</button>
+                                <a href="/login" class="btn btn-outline-primary">Login</a>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<script src="/public/js/jquery.min.js"></script>
+<script src="/public/js/popper.min.js"></script>
+<script src="/public/js/bootstrap.bundle.min.js"></script>
+<script src="/public/js/main.js"></script>
+</body>
+</html>
