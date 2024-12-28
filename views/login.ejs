@@ -1,15 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>iofrm</title>
-    <link rel="stylesheet" type="text/css" href="/public/css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="/public/css/fontawesome-all.min.css">
-    <link rel="stylesheet" type="text/css" href="/public/css/iofrm-style.css">
-    <link rel="stylesheet" type="text/css" href="/public/css/iofrm-theme39.css">
-</head>
-<body>
+<%- include('partials/header') %>
+
     <div class="form-body without-side">
         <div class="iofrm-layout">
             <div class="form-holder">
@@ -45,27 +35,4 @@
             </div>
         </div>
     </div>
-<script src="/public/js/jquery.min.js"></script>
-<script src="/public/js/popper.min.js"></script>
-<script src="/public/js/bootstrap.bundle.min.js"></script>
-<script src="/public/js/main.js"></script>
-
-<script>
-
-    //status
-    const status = document.getElementById('status');
-    const urlParams = new URLSearchParams(window.location.search);
-    const statusParam = urlParams.get('status');
-
-    if(statusParam === 'success') {
-        status.innerHTML = '<div class="alert alert-success" role="alert">Login successful</div>';
-    } else if(statusParam === 'error') {
-        status.innerHTML = '<div class="alert alert-danger" role="alert">Login failed</div>';
-    }
-    
-
-</script>
-
-
-</body>
-</html>
+    <%- include('partials/footer') %>

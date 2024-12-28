@@ -1,0 +1,24 @@
+<script src="/public/js/jquery.min.js"></script>
+<script src="/public/js/popper.min.js"></script>
+<script src="/public/js/bootstrap.bundle.min.js"></script>
+<script src="/public/js/main.js"></script>
+
+<script>
+
+    //status
+    const status = document.getElementById('status');
+    const urlParams = new URLSearchParams(window.location.search);
+    const statusParam = urlParams.get('status');
+
+    if(statusParam === 'success') {
+        status.innerHTML = '<div class="alert alert-success" role="alert">Login successful</div>';
+    } else if(statusParam === 'error') {
+        status.innerHTML = '<div class="alert alert-danger" role="alert">Login failed</div>';
+    }
+
+
+</script>
+
+
+</body>
+</html>
